@@ -11,6 +11,7 @@ import Join from './components/pages/Join/Join';
 import PracticeAreas from './components/pages/PracticeAreas/PracticeAreas';
 import Teams from './components/pages/Teams/Teams';
 import Home from './components/pages/Home/Home';
+import Disclaimer from './components/pages/Disclaimer/Disclaimer'
 
 const App = () => {
   return (
@@ -18,8 +19,9 @@ const App = () => {
       <Header/>
       <Navbar/>
       <Routes>
+      <Route path='/' element={<Disclaimer/>}/>
 
-        <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
         
         <Route path='/aboutus' element={<AboutUs/>}/>
 
@@ -30,6 +32,8 @@ const App = () => {
         <Route path='/practiceareas' element={<PracticeAreas/>}/>
 
         <Route path='/team' element={<Teams/>}/>
+
+        <Route path="*" element={<Disclaimer />} />
       </Routes>
       <Footer/>
     </Router>
