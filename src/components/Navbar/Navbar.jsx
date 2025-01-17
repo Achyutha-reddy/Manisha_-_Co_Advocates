@@ -22,7 +22,7 @@ const Navbar = () => {
         
         <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
           <li className="navbar-item" onClick={closeMenu}>
-            <Link to="/home" className="navbar-link">HOME</Link>
+            <Link to="/" className="navbar-link">HOME</Link>
           </li>
           <li className="navbar-item" onClick={closeMenu}>
             <Link to="/team" className="navbar-link">TEAM</Link>

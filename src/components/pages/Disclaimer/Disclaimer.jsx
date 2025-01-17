@@ -7,7 +7,7 @@ const Disclaimer = () => {
   const navigate = useNavigate();
 
   const handleAgree = () => {
-    setShowModal(false); // Close the modal
+    setShowModal(true); // Close the modal
     navigate("/home"); // Navigate to the Home page
   };
 

@@ -20,9 +20,9 @@ const App = () => {
       <Navbar/>
       <Routes>
 
-        <Route path='/' element={<Disclaimer/>}/>
-        
-        <Route path='/home' element={<Home/>}/>
+        {/* <Route path='/' element={<Disclaimer/>}/> */}
+
+        <Route path='/' element={<Home/>}/>
         
         <Route path='/aboutus' element={<AboutUs/>}/>
 
