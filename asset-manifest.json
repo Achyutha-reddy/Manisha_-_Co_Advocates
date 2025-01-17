@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Manisha_and_Co_Advocates/static/css/main.58f91456.css",
+    "main.css": "/Manisha_and_Co_Advocates/static/css/main.18d70025.css",
     "main.js": "/Manisha_and_Co_Advocates/static/js/main.835523f2.js",
     "static/media/law.jpg": "/Manisha_and_Co_Advocates/static/media/law.16241dacca3d2cddf768.jpg",
     "index.html": "/Manisha_and_Co_Advocates/index.html",
-    "main.58f91456.css.map": "/Manisha_and_Co_Advocates/static/css/main.58f91456.css.map",
+    "main.18d70025.css.map": "/Manisha_and_Co_Advocates/static/css/main.18d70025.css.map",
     "main.835523f2.js.map": "/Manisha_and_Co_Advocates/static/js/main.835523f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.58f91456.css",
+    "static/css/main.18d70025.css",
     "static/js/main.835523f2.js"
   ]
 }
