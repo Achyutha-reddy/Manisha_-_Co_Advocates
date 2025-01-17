@@ -1,53 +1,88 @@
+/* Header Styles */
 .header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-  }
-  
-  .header-container {
+    background-color: #ffffff; /* White background */
+    color: #1d3557; /* Blue text color */
+    padding: 8px 15px; /* Reduced padding for a more compact header */
     display: flex;
-    justify-content: space-between; /* Ensures space between title and social icons */
+    justify-content: space-between; /* Ensures space between logo/title and social media icons */
     align-items: center; /* Vertically align items in the center */
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .header-logo {
-    flex: 1; /* Takes the remaining space */
-    text-align: left; /* Align title to the left */
-  }
-  
-  .title {
-    font-size: 1.8em;
-    margin: 0;
-  }
-  
-  .header-socio {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+}
+
+/* Container to center content and ensure proper alignment */
+.header-container {
     display: flex;
+    justify-content: space-between; /* Align logo and title to the left, social icons to the right */
+    align-items: center; /* Ensure both the logo and social icons are vertically aligned */
+    max-width: 1000px; /* Reduced max-width for a more compact layout */
+    width: 100%;
+    margin: 0 auto; /* Centers content */
+}
+
+/* Logo and Title */
+.header-logo {
+    display: flex;
+    align-items: center; /* Ensures logo and title are aligned on the same height */
+}
+
+.logo-image {
+    width: 35px; /* Reduced logo size */
+    height: 35px;
+    margin-right: 8px; /* Reduced space between logo and title */
+    fill: #1d3557; /* Blue color for the logo */
+}
+
+.title {
+    font-size: 1.3em; /* Smaller title size */
+    font-weight: bold;
+    margin: 0;
+    color: #1d3557; /* Blue text color for the title */
+}
+
+/* Social Media Icons */
+.header-socio {
+    display: flex;
+    align-items: center; /* Align social icons vertically with logo */
     justify-content: flex-end; /* Align social media icons to the right */
-    gap: 15px; /* Adds space between the social icons */
-  }
-  
-  .header-socio a {
-    color: white;
+    gap: 12px; /* Reduced space between icons */
+}
+
+.header-socio a {
+    color: #1d3557; /* Blue color for icons */
     transition: color 0.3s ease;
-  }
-  
-  .header-socio a:hover {
-    color: #ddd;
-  }
-  
-  /* Media Query for small screens (mobile) */
-  @media (max-width: 768px) {
+}
+
+.header-socio a:hover {
+    color: #e63946; /* Red color on hover */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
     .header {
-      display: none; /* Hide the header on small screens */
+        padding: 8px 12px; /* Further reduced padding for smaller screens */
     }
-  }
-  
-  /* Media Query for very small screens (extra mobile) */
-  @media (max-width: 480px) {
-    .header {
-      display: none; /* Hide the header on extra small screens */
+
+    .header-container {
+        flex-direction: column; /* Stack logo/title and social icons vertically */
+        align-items: flex-start; /* Align items to the left on smaller screens */
     }
-  }
-  
+
+    .header-logo {
+        margin-bottom: -30px; /* Space below logo and title */
+    }
+    
+    /* Hide title on small screens */
+    .title {
+        display: none; /* Hide title on screens smaller than 768px */
+    }
+
+    .header-socio {
+        width: 100%; /* Full width for social icons */
+        justify-content: flex-end; /* Align social media icons to the left */
+        gap: 1px; /* Slightly smaller gap for mobile screens */
+    }
+
+    .header-socio a {
+        margin-left: 6px; /* Reduced spacing on mobile */
+    }
+}
