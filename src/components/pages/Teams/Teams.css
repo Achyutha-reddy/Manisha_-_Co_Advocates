@@ -1,0 +1,154 @@
+/* Base styles for the Teams page */
+.teams-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Header */
+.teams-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.teams-header h1 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 10px;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.teams-header p {
+    font-size: 1.2em;
+    color: #666;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+/* Teams Content */
+.teams-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+/* Individual Team Member */
+.team-member {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.team-member-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .team-member-img {
+    transform: scale(1.1); /* Slight zoom effect on image */
+}
+
+/* Team Member Info */
+.team-member-info h2 {
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.7s forwards;
+}
+
+.team-member-info h3 {
+    font-size: 1.2em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.team-member-info p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Hover effect for Team Member name and title */
+.team-member-info h2:hover,
+.team-member-info h3:hover {
+    color: #002244;
+    cursor: pointer;
+    transform: translateY(-5px); /* Subtle lift effect */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teams-container {
+        padding: 20px;
+    }
+
+    .teams-header h1 {
+        font-size: 2em;
+    }
+
+    .teams-header p {
+        font-size: 1em;
+    }
+
+    .team-member-info h2 {
+        font-size: 1.6em;
+    }
+
+    .team-member-info h3 {
+        font-size: 1.1em;
+    }
+
+    .team-member-info p {
+        font-size: 0.9em;
+    }
+}
+
+/* Animations for Sections and Elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

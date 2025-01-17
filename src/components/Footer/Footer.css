@@ -1,0 +1,81 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; /* Spacing between the items */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  }
+  
+  .footer-logo {
+    flex: 1; /* Takes remaining space */
+    text-align: left;
+  }
+  
+  .title-logo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav {
+    flex: 2;
+    text-align: right; /* Aligns the nav items to the right side */
+  }
+  
+  .footer-nav h4 {
+    font-size: 1.2em;
+  }
+  
+  .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .footer-nav ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #ddd;
+  }
+  
+  .footer-socio {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px; /* Adds spacing between menu items and social icons */
+  }
+  
+  .socio-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .socio-icons a {
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .socio-icons a:hover {
+    color: #ddd;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

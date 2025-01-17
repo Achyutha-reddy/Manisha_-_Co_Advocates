@@ -1,0 +1,53 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between title and social icons */
+    align-items: center; /* Vertically align items in the center */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header-logo {
+    flex: 1; /* Takes the remaining space */
+    text-align: left; /* Align title to the left */
+  }
+  
+  .title {
+    font-size: 1.8em;
+    margin: 0;
+  }
+  
+  .header-socio {
+    display: flex;
+    justify-content: flex-end; /* Align social media icons to the right */
+    gap: 15px; /* Adds space between the social icons */
+  }
+  
+  .header-socio a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .header-socio a:hover {
+    color: #ddd;
+  }
+  
+  /* Media Query for small screens (mobile) */
+  @media (max-width: 768px) {
+    .header {
+      display: none; /* Hide the header on small screens */
+    }
+  }
+  
+  /* Media Query for very small screens (extra mobile) */
+  @media (max-width: 480px) {
+    .header {
+      display: none; /* Hide the header on extra small screens */
+    }
+  }
+  

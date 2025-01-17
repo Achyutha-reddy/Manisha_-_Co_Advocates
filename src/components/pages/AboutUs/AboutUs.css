@@ -1,0 +1,163 @@
+/* Base styles for the About page */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Header */
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+.about-header h1 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 10px;
+    transform: translateY(30px);
+    animation: slideUp 0.7s ease-out 1s forwards;
+}
+
+.about-header p {
+    font-size: 1.2em;
+    color: #666;
+    transform: translateY(30px);
+    animation: slideUp 0.7s ease-out 1.3s forwards;
+}
+
+/* About Information */
+.about-info,
+.about-mission,
+.about-values {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+    transform: translateY(30px);
+}
+
+/* Heading for sections */
+.about-info h2,
+.about-mission h2,
+.about-values h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-info h2:hover,
+.about-mission h2:hover,
+.about-values h2:hover {
+    color: #ffb84d; /* Soft yellow-orange on hover */
+    transform: translateX(10px); /* Slight movement to the right */
+}
+
+/* Paragraph and List styles */
+.about-info p,
+.about-mission p,
+.about-values ul {
+    font-size: 1.1em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.about-info p:hover,
+.about-mission p:hover,
+.about-values ul:hover {
+    color: #003366; /* Change to dark blue on hover */
+}
+
+/* About Values List */
+.about-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-values li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.about-values li:hover {
+    color: #ffb84d; /* Soft yellow-orange on hover */
+    cursor: pointer;
+}
+
+/* Hover Effects with Scale */
+.about-info:hover,
+.about-mission:hover,
+.about-values:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-header h1 {
+        font-size: 2em;
+    }
+
+    .about-header p {
+        font-size: 1em;
+    }
+
+    .about-info h2,
+    .about-mission h2,
+    .about-values h2 {
+        font-size: 1.6em;
+    }
+
+    .about-info p,
+    .about-mission p,
+    .about-values ul {
+        font-size: 1em;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

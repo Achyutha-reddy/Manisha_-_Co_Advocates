@@ -1,0 +1,130 @@
+/* Base styles for the Join Us page */
+.join-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header */
+  .join-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .join-header h1 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .join-header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  /* Join Us Information */
+  .join-info {
+    background-color: #003366;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  
+  .join-info h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .join-info p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+  }
+  
+  /* Join Form */
+  .join-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .join-form h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1.1em;
+    color: #003366;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+  }
+  
+  .submit-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #66ccff; /* Light blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .join-container {
+      padding: 20px;
+    }
+  
+    .join-header h1 {
+      font-size: 2em;
+    }
+  
+    .join-header p {
+      font-size: 1em;
+    }
+  
+    .join-info h2 {
+      font-size: 1.6em;
+    }
+  
+    .join-form h2 {
+      font-size: 1.6em;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  
+    .submit-btn {
+      font-size: 1em;
+      padding: 10px 15px;
+    }
+  }
+  

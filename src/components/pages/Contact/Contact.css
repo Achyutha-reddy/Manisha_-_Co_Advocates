@@ -1,0 +1,184 @@
+/* Base styles for the contact page */
+.contact-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+.contact-header h1 {
+    color: #003366;
+    font-size: 3em;
+    margin-bottom: 10px;
+    transform: translateY(30px);
+    animation: slideUp 0.7s ease-out 1s forwards;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #666;
+    transform: translateY(30px);
+    animation: slideUp 0.7s ease-out 1.3s forwards;
+}
+
+/* Contact Information */
+.contact-info {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.contact-info h2:hover {
+    color: #66ccff; /* Light blue on hover */
+}
+
+/* Contact Information Address */
+.contact-info address p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 2s forwards;
+}
+
+.contact-form h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.contact-form h2:hover {
+    color: #66ccff; /* Light blue on hover */
+}
+
+/* Form Inputs & Textarea */
+.form-group {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #003366;
+}
+
+/* Form Inputs and Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #66ccff; /* Highlight border on focus */
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #66ccff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #003366;
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Join Us Button at the top */
+.join-us-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.join-us-btn {
+    display: inline-block;
+    background-color: #66ccff; /* Light blue background */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.join-us-btn:hover {
+    background-color: #003366; /* Dark blue on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

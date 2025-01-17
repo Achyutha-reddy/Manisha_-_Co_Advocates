@@ -1,0 +1,291 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Page Container */
+.home-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 2rem;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+/* Buttons Styling */
+button, .cta-btn, .learn-more-btn, .read-more-btn {
+    background-color: #003366;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .cta-btn:hover, .learn-more-btn:hover, .read-more-btn:hover {
+    background-color: #002244;
+    transform: translateY(-5px); /* Lift the button */
+}
+
+/* Hero Image Styling */
+.hero-image-container {
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-out 1s forwards;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards;
+}
+
+/* About Section Styling */
+.about-section {
+    margin-top: 3rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Practice Areas Section Styling */
+.practice-areas-section {
+    margin-top: 3rem;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+.practice-areas-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.practice-area-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+.practice-area-card {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.practice-area-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.practice-area-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.practice-area-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+    margin-top: 3rem;
+    animation: fadeInUp 1s ease-out 0.7s forwards;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); /* Lift the testimonial card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Call to Action Section Styling */
+.cta-section {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    animation: fadeInUp 1s ease-out 0.9s forwards;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background-color: #003366;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.cta-btn:hover {
+    background-color: #002244;
+    transform: translateY(-5px); /* Lift the CTA button */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and Below */
+@media (max-width: 768px) {
+    .practice-area-cards {
+        flex-direction: column;
+    }
+
+    .practice-area-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-btn, .learn-more-btn, .read-more-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .about-section p, .testimonials-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .about-section h2, .practice-areas-section h2, .testimonials-section h2, .cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .practice-area-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .practice-area-card p {
+        font-size: 0.9rem;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}
+
+/* Animations for Sections and Elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
