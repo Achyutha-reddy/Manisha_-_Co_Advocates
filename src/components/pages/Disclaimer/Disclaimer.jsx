@@ -19,7 +19,7 @@ const Disclaimer = () => {
           <p>
             The current rules of the Bar Council of India restrict/prohibit law firms from advertising and soliciting work
             through communication in the public domain. This website has been designed solely for the purposes of dissemination
-            of basic information about Vritti Legal, which is made available on the specific request of the visitor/user.
+            of basic information about us, which is made available on the specific request of the visitor/user.
           </p>
           <ul>
             <li>The contents of this website do not amount to advertising or solicitation.</li>
@@ -36,19 +36,19 @@ const Disclaimer = () => {
               attorney-client relationship.
             </li>
             <li>
-              Vritti Legal is not liable for the consequence of any action or decision taken by the visitor by relying on the
+              We are not liable for the consequence of any action or decision taken by the visitor by relying on the
               contents of this website or of any external links on this website.
             </li>
             <li>
-              Vritti Legal does not assume any liability for the interpretation or use of the information provided on this
+              We does not assume any liability for the interpretation or use of the information provided on this
               website and does not offer any warranty, either express or implied.
             </li>
             <li>
-              The contents of this website are the property of Vritti Legal, and the visitor is not authorized to use any part
-              thereof, with or without adaptation, without the express prior written consent of Vritti Legal.
+              The contents of this website are the property of Us, and the visitor is not authorized to use any part
+              thereof, with or without adaptation, without the express prior written consent of Us.
             </li>
             <li>
-              Vritti Legal uses cookies on this website to improve user experience. By continuing to use this website without
+              We uses cookies on this website to improve user experience. By continuing to use this website without
               changing your privacy settings, you agree to the use of cookies.
             </li>
           </ul>

@@ -19,9 +19,9 @@ const App = () => {
       <Header/>
       <Navbar/>
       <Routes>
-      <Route path='/' element={<Disclaimer/>}/>
+      {/* <Route path='/' element={<Disclaimer/>}/> */}
 
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         
         <Route path='/aboutus' element={<AboutUs/>}/>
 
@@ -33,7 +33,7 @@ const App = () => {
 
         <Route path='/team' element={<Teams/>}/>
 
-        <Route path="*" element={<Disclaimer />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer/>
     </Router>

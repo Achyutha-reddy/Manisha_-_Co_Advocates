@@ -41,11 +41,11 @@ const Contact = () => {
         <div className="contact-info">
           <h2>Our Office</h2>
           <address>
-            <p>Manisha & Co Advocates</p>
-            <p>123 Legal Street, Suite 101</p>
-            <p>City, Country</p>
-            <p>Email: contact@manishaandco.com</p>
-            <p>Phone: +123-456-7890</p>
+            <p>MANISHA REDDY (B.A, LL.M)</p>
+            <p>Dhobipet(V), Shankerpally(M)</p>
+            <p>Ranga Reddy dist. , Telangana, 501203</p>
+            <p>Email: manishareddy.adv@gmail.com </p>
+            <p>Phone: +91 7093215302</p>
           </address>
         </div>
 

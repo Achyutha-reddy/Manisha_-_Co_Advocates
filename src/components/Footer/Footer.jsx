@@ -15,7 +15,7 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <nav>
             <ul>
-              <li><Link to="/home" className="footer-link">Home</Link></li>
+              <li><Link to="/" className="footer-link">Home</Link></li>
               <li><Link to="/team" className="footer-link">Teams</Link></li>
               <li><Link to="/aboutus" className="footer-link">About</Link></li>
               <li><Link to="/practiceareas" className="footer-link">Practice Areas</Link></li>
