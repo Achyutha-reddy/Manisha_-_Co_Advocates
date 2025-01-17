@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Disclaimer.css";
 
 const Disclaimer = () => {
   const [showModal, setShowModal] = useState(true);
+  const navigate = useNavigate();
 
   const handleAgree = () => {
-    setShowModal(false);
+    setShowModal(false); // Close the modal
+    navigate("/home"); // Navigate to the Home page
   };
 
   return (
@@ -50,9 +52,9 @@ const Disclaimer = () => {
               changing your privacy settings, you agree to the use of cookies.
             </li>
           </ul>
-          <Link to="/home" className="agree-button" onClick={handleAgree}>
+          <button className="agree-button" onClick={handleAgree}>
             AGREE & ENTER
-          </Link>
+          </button>
         </div>
       </div>
     )
