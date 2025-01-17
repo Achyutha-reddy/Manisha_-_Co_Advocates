@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Assuming you have a separate CSS file for styling
+import lawimage from '../../../assets/law.jpg'
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         
         {/* Image under Hero Section */}
         <div className="hero-image-container">
-          <img src="path-to-your-image.jpg" alt="Legal Services" className="hero-image" />
+          {/* <img src={lawimage} alt="Legal Services" className="hero-image" /> */}
         </div>
       </div>
 
